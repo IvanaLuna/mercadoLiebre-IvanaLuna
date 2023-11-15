@@ -1,0 +1,312 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h2{
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header nav{
+    display: none;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.search-bar input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+.search-bar button{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    padding: 2px;
+}
+
+div.burger-menu i{
+    background-color: #03264C;
+    border-radius: 5px;
+    color: #FFF;
+    display: block;
+    max-width: 40px;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+section.ultima-visita,
+section.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    width: 70%;
+}
+
+.descuento,
+.descripcion {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h2,
+.descripcion{
+    color: #666;
+}
+
+.descripcion{
+    margin-top: 20px;
+    display: none;
+}
+
+section.banner img{
+    width:100%;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+section article{
+    background-color: #FFF;
+    margin: 10px 0px;
+}
+
+section article img{
+    width: 100%;
+}
+
+section article i, 
+.descuento{
+    color: #39b54a;
+}
+
+section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+section article i:hover{
+    transform: rotate(-90deg);
+}
+
+section article{
+    position: relative;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.pie-de-pagina{
+    text-align: center;
+}
+
+.aviso i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+form.registro{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin:10px;
+}
+
+#nombre, #usuario, #email, #date, #domicilio,
+#foto, #password, #confir-password{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #ebebeb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#perfil-del-usuario,
+#intereses{
+    display: block;
+    padding: 10px;
+}
+
+form p input{
+    width: 10%;
+    background-color: #666;
+    color: #000;
+    margin: 5px 0;
+    border: solid 1px #000;
+    border-radius: 4px;
+}
+
+form p{
+    text-align: center;
+}
+
+#usuario-login, #password-login{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #ebebeb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-login input.button{
+    width: 70%;
+    margin: 5px 0;
+    border: solid 1px #000;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #1259c3;
+    color: #000;
+}
+
+.form-login input.button:hover{
+    background-color: #0022AA;
+}
+
+.form-login{
+    text-align: center;
+    padding: 5%;   
+}
+
+
+@media (min-width:361px){
+    
+    article:hover .descripcion{
+        display: block;    
+    }
+    section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        margin: 0px 10px;
+    }
+    div.burger-menu{
+        display: none;
+    }
+
+    section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    section div.productos article{
+        width: 45%;
+    }
+   
+    div.top-header{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }   
+}
+
+@media (min-width:769px){
+    main section div.productos article{
+        width: 22%;
+    }
+    
+    div.pie-de-pagina{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aviso i:hover{
+        color: #5499C7;
+    }
+}
